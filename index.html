@@ -53,16 +53,31 @@
       text-align: center;
     }
 
-    #mail {
-      background-color: #eee;
-      color: black;
-      display: inline-block;
-      padding: 10px;
-      text-decoration: none;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    #mail:hover {
-      background-color: #ccc;
+    h1 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    h1:before,
+    h1:after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px solid;
+      margin: auto;
+    }
+
+    h1:before {
+      margin-right: 10px
+    }
+
+    h1:after {
+      margin-left: 10px
     }
   </style>
 </HEAD>
@@ -88,19 +103,12 @@
     <br />
     <br />
     <br />
+    <h1>About Me</h1>
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    about me
+    שמי נלי שישה, נולדתי 
   </section>
 
-  <section id="My Playlist" class="section">
+  <section align="center" id="My Playlist" class="section">
     <br />
     <br />
     <br />
@@ -111,52 +119,17 @@
     <br />
     <br />
     <br />
+    <h1>My Playlist</h1>
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UHb3SuRs6zg" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <iframe width="728" height="546" src="https://www.youtube.com/embed/qk41-gsRjWw?list=PLw471NS2K-x2jM1wSnpfmC_wag42ZMIkr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
 
   <section id="My Photos" My Photos class="section">
     <br />
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <!-- <div class="gallery">
-      <a target="_blank" href="mami.jpg">
-        <img src="mami.jpg" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="mami.jpg">
-        <img src="mami.jpg" alt="Forest" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="mami.jpg">
-        <img src="mami.jpg" alt="Northern Lights" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="mami.jpg">
-        <img src="mami.jpg" alt="Mountains" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div> -->
+    <h1>My Photos</h1>
+    <br/>
     <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
     <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
       data-link="https://photos.app.goo.gl/52MdHMxhv3Wi9est6" data-title="mami"
@@ -306,16 +279,6 @@
       <object
         data="https://lh3.googleusercontent.com/c8_Yd6aoVr39b8NkQEnv-04uGgkZymxSN7hziVYID9ccwkNQr3om3LY8e6wZvgrZmblyIpRvzMhr47n-NFB7y5Gd9Xae9qvbLt7PadW2Q9XOQNdGbdQsJd9jnXOy1oCLx_RlMUq0saU=w1920-h1080"></object>
     </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <br />
     <br />
     <br />
@@ -324,11 +287,11 @@
     <br />
   </section>
 
-  <section class="section">
-
+  <section id="Like" align = "center" class="section">
+    <h1>Like</h1>
     <iframe
       src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fherzelchouai&width=74&layout=box_count&action=like&size=large&share=true&height=65&appId"
-      width="74" height="94" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+      width="74" height="94" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" 
       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     <br />
   </section>
@@ -336,12 +299,14 @@
   <section id="QR Code" class="section">
     <br />
     <br />
-    <img src="QR.jpg" alt="Cinque Terre" width="200" height="200">
+    <h1 align="center">QR</h1>
+    <img src="QR1.png" alt="QR" width="200" height="200">
   </section>
 
 
 
-  <section id="Contact Me" class="section">
+  <section id="Contact Me" align = "center" class="section">
+    <h1>Contact us</h1>
     <br />
     <br />
     <form action="mailto:shimon.on5@gmai.com" method="POST" enctype="multipart/form-data" name="EmailForm">
@@ -349,6 +314,8 @@
       <input type="text" size="19" name="Contact-Name"><br><br>
       Email:<br>
       <input type="email" name="Contact-Email"><br><br>
+      Subject:<br>
+      <input type="text" name="Contact-Subject"><br><br>
       Message:<br>
       <textarea name="Contact-Message" rows="6″ cols=" 20″>
     </textarea><br><br>
@@ -357,22 +324,7 @@
   </section>
   <section id="Q&A" class="section">
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    Q&A
+    <h1>Q&A</h1>
   </section>
 
 
